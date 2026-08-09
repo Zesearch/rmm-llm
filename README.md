@@ -3,20 +3,28 @@
 Training-free, input-adaptive reduction of Transformer matrix multiplications
 for language and multimodal model inference.
 
-**Zixuan Lan**<br>
-University of Chicago · [zixuanlan@uchicago.edu](mailto:zixuanlan@uchicago.edu)
+<p align="center">
+  <strong>Zixuan Lan<sup>1</sup> · Yanhong Li<sup>2</sup> · Jiawei Zhou<sup>3</sup></strong>
+</p>
 
-**Yanhong Li**<br>
-Independent Researcher · Email forthcoming
+<p align="center">
+  <sup>1</sup>University of Chicago &nbsp;&nbsp;
+  <sup>2</sup>Independent Researcher &nbsp;&nbsp;
+  <sup>3</sup>Stony Brook University
+</p>
 
-**Jiawei Zhou**<br>
-Stony Brook University · [jiawei.zhou.1@stonybrook.edu](mailto:jiawei.zhou.1@stonybrook.edu)
+<p align="center">
+  <a href="mailto:zixuanlan@uchicago.edu">zixuanlan@uchicago.edu</a> &nbsp;·&nbsp;
+  Yanhong Li: email forthcoming &nbsp;·&nbsp;
+  <a href="mailto:jiawei.zhou.1@stonybrook.edu">jiawei.zhou.1@stonybrook.edu</a>
+</p>
 
-![Overview of Reduced Matrix Multiplication](method.png)
-
-*RMM selects informative slices along matrix contraction dimensions for
-Attention and MLP computation. The original vector figure is available as
-[method.pdf](method.pdf).*
+<p align="center">
+  <img src="https://img.shields.io/badge/arXiv-coming%20soon-B31B1B?logo=arxiv&amp;logoColor=white" alt="arXiv coming soon">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache License 2.0">
+  </a>
+</p>
 
 ## Abstract
 
@@ -39,7 +47,15 @@ into practical runtime gains, especially at longer sequence lengths. Together,
 these results position RMM as a scalable direction for input-adaptive
 inference-time optimization.
 
-## Method
+## Overview
+
+<p align="center">
+  <img src="method.png" alt="RMM reduction for Attention prefill and decoding and for MLP projections">
+</p>
+
+<p align="center">
+  <a href="method.pdf">Open the full-resolution method figure</a>
+</p>
 
 RMM reduces a matrix multiplication by ranking the current activation along
 its contraction dimension, retaining the most informative slices, and applying
