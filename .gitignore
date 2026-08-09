@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# RMM evaluation outputs and local macOS metadata
+results/
+*.csv
+*.jsonl
+.DS_Store

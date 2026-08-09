@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rmm-pruning"
+version = "0.1.0"
+description = "Reference PyTorch implementation and evaluation tools for input-aware matrix-multiplication pruning."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  {name = "Zixuan Lan", email = "zixuanlan@uchicago.edu"},
+  {name = "Yanhong Li"},
+  {name = "Jiawei Zhou", email = "jiawei.zhou.1@stonybrook.edu"},
+]
+license = {text = "Apache-2.0"}
+keywords = [
+  "language-models",
+  "inference",
+  "matrix-multiplication",
+  "input-adaptive-computation",
+]
+dependencies = [
+  "torch>=2.1",
+  "transformers>=4.51",
+]
+
+[project.optional-dependencies]
+eval = [
+  "datasets>=2.19",
+  "tqdm>=4.66",
+]
+quant = [
+  "accelerate>=0.30",
+  "bitsandbytes>=0.43",
+]
+harness = [
+  "lm-eval[hf]>=0.4.12,<0.5",
+]
+summarization = [
+  "rouge-score>=0.1.2",
+  "sacrebleu>=2.4",
+  "bert-score>=0.3.13",
+]
+dev = [
+  "pytest>=8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/Zesearch/rmm-llm"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
