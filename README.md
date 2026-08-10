@@ -15,7 +15,7 @@ for language and multimodal model inference.
 
 <p align="center">
   <a href="mailto:zixuanlan@uchicago.edu">zixuanlan@uchicago.edu</a> &nbsp;·&nbsp;
-  Yanhong Li: email forthcoming &nbsp;·&nbsp;
+  <a href="mailto:yanhong.lbh@gmail.com">yanhong.lbh@gmail.com</a> &nbsp;·&nbsp;
   <a href="mailto:jiawei.zhou.1@stonybrook.edu">jiawei.zhou.1@stonybrook.edu</a>
 </p>
 

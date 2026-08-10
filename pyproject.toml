@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 authors = [
   {name = "Zixuan Lan", email = "zixuanlan@uchicago.edu"},
-  {name = "Yanhong Li"},
+  {name = "Yanhong Li", email = "yanhong.lbh@gmail.com"},
   {name = "Jiawei Zhou", email = "jiawei.zhou.1@stonybrook.edu"},
 ]
 license = {text = "Apache-2.0"}
