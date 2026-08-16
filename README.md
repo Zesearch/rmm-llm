@@ -20,7 +20,9 @@ for language and multimodal model inference.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/arXiv-coming%20soon-B31B1B?logo=arxiv&amp;logoColor=white" alt="arXiv coming soon">
+  <a href="https://arxiv.org/abs/2608.13426">
+    <img src="https://img.shields.io/badge/arXiv-2608.13426-B31B1B?logo=arxiv&amp;logoColor=white" alt="arXiv 2608.13426">
+  </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache License 2.0">
   </a>
